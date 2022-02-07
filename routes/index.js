@@ -9,11 +9,11 @@ router.get('/', function(req, res, next) {
 router.get('/test',(req ,res)=>{
   const obj = {"name":"Amit","age":21};
   res.send(obj);
+  res.json(obj);
 });
 
 router.post('/post/:string',(req,res)=>{
   const string = req.params.string;
-  console.log(string);
 });
 
 module.exports = router;
