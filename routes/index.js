@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 //GET Data From Array
-router.get('/demo',(req ,res)=>{
+router.get('/test',(req ,res)=>{
   const obj = {"name":"Amit","age":21};
   res.send(obj);
 });
