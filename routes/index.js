@@ -11,4 +11,9 @@ router.get('/test',(req ,res)=>{
   res.send(obj);
 });
 
+router.post('/post/:string',(req,res)=>{
+  const string = req.params.string;
+  console.log(string);
+});
+
 module.exports = router;
