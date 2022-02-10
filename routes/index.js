@@ -31,6 +31,7 @@ router.get('/player/:player_uid/:player/:score',(req,res)=>{
     if (err) throw err;
   });
   console.log(player + " " + score + " " + player_uid + " ");
+  res.send("Success");
 });
 
 module.exports = router;
