@@ -4,10 +4,10 @@
 // Compare this snippet from app.js:
 var mysql = require('mysql');
 var con = mysql.createConnection({
-    host     : '',
-    user     : '',
+    host     : 'localhost',
+    user     : 'root',
     password : '',
-    database : ''
+    database : 'uao'
 });
 
 con.connect(function(err) {
